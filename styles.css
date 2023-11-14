@@ -76,14 +76,27 @@ input[type="number"] {
   font-size: 18px;
 }
 
+.btn-remove {
+  background-color: var(--grey);
+}
+
+.btn-green {
+  background-color: var(--light-green);
+}
+.btn-red {
+  background-color: var(--light-red);
+}
+
 .header {
   background-color: var(--white);
   box-shadow: var(--shadow);
+  height: 80px;
 }
 .header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: var(--spacing-md);
 }
 .main {
   margin-top: var(--spacing-lg);
@@ -95,6 +108,18 @@ input[type="number"] {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: var(--spacing-xl);
   margin-top: var(--spacing-xl);
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 1.2;
+  gap: var(--spacing-md);
+  background-color: var(--white);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
 }
 
 .content {
